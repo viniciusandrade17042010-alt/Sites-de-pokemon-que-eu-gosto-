@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(red 50%, white 50%);
+  
+  /* Centraliza todo o conteúdo no meio da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 12px 0;
+}
+
+a {
+  color: #3700ff;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Agrupa os botões lado a lado */
+.grupo-botoes {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Estilo base compartilhado para todos os botões de fundo */
+.botao-fundo1,
+.botao-fundo2,
+.botao-fundo3 {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Define apenas a imagem individual de cada um */
+.botao-fundo1 {
+  background-image: url('pokebola.png');
+}
+
+.botao-fundo2 {
+  background-image: url('pokebola 2.png'); /* Ou renomeie o arquivo para 'pokebola2.png' */
+}
+
+.botao-fundo3 {
+  background-image: url('pokebola3.png');
+}
